@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -23,5 +24,11 @@ public class MainTime {
         var pessoalFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         var data = LocalDateTime.parse(leticiaNasceu, pessoalFormatter);
         System.out.println(pessoalFormatter.format(data));
+
+        LocalDate dataInicio = LocalDate.of(2022, 01, 01);
+        LocalDate dataFim = LocalDate.parse("30/01/2022", DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        System.out.println("Ferias de " + dataInicio + " ate " + dataFim);
+
+        IO.println(dataFim.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
     }
 }
