@@ -1,4 +1,4 @@
-package veiculos.embarcacoes;
+package implement.embarcacoes;
 
 import componentes.Motor;
 

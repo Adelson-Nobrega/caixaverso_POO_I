@@ -1,4 +1,4 @@
-package veiculos.embarcacoes;
+package implement.embarcacoes;
 
 public abstract class Barco {
 
