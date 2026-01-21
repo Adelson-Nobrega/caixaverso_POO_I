@@ -1,6 +1,7 @@
 package function;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,8 +24,8 @@ public class MainDates {
         // para obter apenas as datas posteriores a 31 de dezembro de 2020
 
         dates.stream()
-                .filter(new DateFilter())
-                .map(new DateConverterToBrazil())
+                .filter(date -> date.isAfter(LocalDate.of(2020, 12, 31)))
+                .map(date -> date.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")))
                 .forEach(IO::println);
     }
 }

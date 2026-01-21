@@ -13,7 +13,8 @@ public class CalcMediaParesArray {
     public static double calculaMediaPares(Integer[] input) {
         Stream<Integer> stream = Stream.of(input);
         return stream.filter(n -> n % 2 == 0)
-                .mapToInt(Integer::intValue)
-                .average().orElse(0);
+                     .mapToInt(Integer::intValue)
+                     .average()
+                     .orElse(0);
     }
 }

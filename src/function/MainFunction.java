@@ -20,16 +20,16 @@ public class MainFunction {
         swimmers.add(new Crab());
         swimmers.add(new JellyFish());
 
-        Predicate<Swimmers> filter = new FishFilter();
+        //Predicate<Swimmers> filter = new FishFilter();
         // Lambda
         // tipo variável = (parâmetros) -> expressão ou bloco
-        Predicate<Swimmers> filterLambda =
-                (Swimmers swimmers) -> swimmers instanceof Fish;
+        //Predicate<Swimmers> filterLambda = (Swimmers swimmers) -> swimmers instanceof Fish;
 
         List<CanFish> cansFish = swimmers.stream()
                 .filter(swimmers -> swimmers instanceof Fish)
-                .map(new SwimmersConverterToCanFish())
+                .map(swimmers -> new CanFish((Fish) swimmers))
                 .collect(Collectors.toList());
+
         System.out.println(cansFish);
     }
 
