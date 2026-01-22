@@ -24,12 +24,12 @@ public class NumberPractice {
         var stream = Arrays.stream(NUMBERS);
         return stream.reduce(0, Integer::sum);
     }
-//
-//    public Integer sumNumbersWithoutRepeats() {
-//        // Some todos os números, porém não utilize os repetidos
-//        var stream = Arrays.stream(NUMBERS);
-//        return null;
-//    }
+
+    public Integer sumNumbersWithoutRepeats() {
+        // Some todos os números, porém não utilize os repetidos
+        var stream = Arrays.stream(NUMBERS);
+        return null;
+    }
 //
 //    public Map<Integer, Long> countRepeatedNumber() {
 //        // Conte quantas vezes cada número aparece na lista. Exemplo de retorno: 4 -> 2, 1 -> 3

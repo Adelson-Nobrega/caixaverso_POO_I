@@ -27,10 +27,10 @@ public class NumberRevision {
                 result == 34
         );
 
-//        System.out.println("-----------------------------");
-//        reviewer.valid("sumNumbersWithoutRepeats", practices::sumNumbersWithoutRepeats, result ->
-//                result == 25
-//        );
+        System.out.println("-----------------------------");
+        reviewer.valid("sumNumbersWithoutRepeats", practices::sumNumbersWithoutRepeats, result ->
+                result == 25
+        );
 //
 //        System.out.println("-----------------------------");
 //        reviewer.valid("countRepeatedNumber", practices::countRepeatedNumber, result ->
