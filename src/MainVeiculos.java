@@ -1,7 +1,7 @@
 import componentes.*;
 import implement.carros.HB20;
 
-public class Main {
+public class MainVeiculos {
 
     void main() {
 
